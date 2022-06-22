@@ -1,0 +1,29 @@
+.searchContainer{
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+}
+.inputContainer{
+    flex-grow: 1;
+}
+.stars{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #a9a9a9;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #444;
+}
+
+@media (max-width: 800px){
+    .searchContainer{
+        flex-direction: column;
+    }
+    .stars{
+        width: min-content;
+        align-self: center;
+    }
+}
