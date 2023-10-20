@@ -11,7 +11,7 @@ export const LandingPage = () => {
   const [query] = useSearchParams();
   const search = query.get("search");
   const debouncedSearch = useDebounce(search, 300);
-  const [starValue, setStarValue] = useState(null)
+  const [starValue, setStarValue] = useState(null);
   // console.log(starValue);
   const handleChange = (e,newValue) => {
     setStarValue(newValue);
